@@ -10,22 +10,28 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
-    <script src="{{asset('js/app.js')}}"></script>
+    {{-- <script src="{{asset('js/app.js')}}" defer></script> --}}
+
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 
 
     <!-- Fonts -->
 
-    <link rel="dns-prefetch" href="//fonts.bunny.net">
-    <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
+    {{-- <link rel="dns-prefetch" href="//fonts.bunny.net"> --}}
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+
+    {{-- <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet"> --}}
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
 
-    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.6.0/main.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.6.0/main.css">
+
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.6.0/main.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.6.0/locales-all.js"></script>
 
 
-
+    <link href="{{asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app">
@@ -83,7 +89,7 @@
             </div>
         </nav>
 
-    <script src="{{asset ('js./agenda.js')}}" defer></script>
+    {{-- <script src="{{asset ('js./agenda.js')}}" defer></script> --}}
     @vite(['resources/js/agenda.js'])
 
 

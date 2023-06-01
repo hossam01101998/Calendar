@@ -2,9 +2,9 @@
 @section('content')
 
 <div class="container">
-
+    <h1>Calender</h1>
     <div id="agenda">
-        <h1>Calender</h1>
+
     </div>
 
 </div>
