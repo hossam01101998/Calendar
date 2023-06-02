@@ -30,8 +30,14 @@
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.6.0/main.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.6.0/locales-all.js"></script>
 
+    <!-- VAMOS A CAMBIR EL URL POR SI CAMBIAMOS DE ORDENADOR QUE NO HAYA PROBLEMAS CON EL LINK-->
+    <script type="text/javascript">
+    var baseURL= {!! json_encode(url('/')) !!}
+        </script>
 
-    <link href="{{asset('css/app.css') }}" rel="stylesheet">
+
+
+    {{-- <link href="{{asset('css/app.css') }}" rel="stylesheet"> --}}
 </head>
 <body>
     <div id="app">

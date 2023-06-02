@@ -26,6 +26,16 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/event', [App\Http\Controllers\EventController::class, 'index']);
+Route::get('/event/show', [App\Http\Controllers\EventController::class, 'show']);
+
+
+
+Route::post('/event/add', [App\Http\Controllers\EventController::class, 'store']);
+Route::post('/event/edit/{id}', [App\Http\Controllers\EventController::class, 'edit']);
+Route::post('/event/update/{event}', [App\Http\Controllers\EventController::class, 'update']);
+
+Route::post('/event/delete/{id}', [App\Http\Controllers\EventController::class, 'delete']);
+
 
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
